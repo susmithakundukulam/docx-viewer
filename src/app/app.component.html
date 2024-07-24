@@ -1,0 +1,7 @@
+<div>
+  <input type="file" (change)="onFileSelected($event)" />
+  <div *ngIf="selectedFile">
+    <h3>File Preview:</h3>
+    <div *ngIf="fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || fileType === 'application/msword'" id="docx-container"></div>
+  </div>
+</div>
